@@ -8,13 +8,20 @@
     <title>
         <%=title %>
     </title>
+    <link rel="stylesheet" href="/css/layout.css"">
+    <%- style %>
 </head>
 
 <body>
+    <!-- //partial concept -->
+    <%- include('_header'); -%>
 
-    <h1>
-        Post / User post
-    </h1>
+        <%- body %>
+
+
+            <%- include('_footer'); -%>
+
+            <%- script %>
 </body>
 
 </html>
